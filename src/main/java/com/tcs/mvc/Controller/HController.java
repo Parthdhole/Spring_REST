@@ -3,6 +3,7 @@ package com.tcs.mvc.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,13 +12,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tcs.mvc.Entity.Enitiy;
+import com.tcs.mvc.repository.HRespoistory;
 import com.tcs.mvc.sevice.HService;
 
 @RestController
 public class HController {
-	
+
 	@Autowired
-	HService hService;
+	HService hService; 
 	
 	@GetMapping("/result")
 	public List<Enitiy> getAlluser(){
@@ -34,8 +36,19 @@ public class HController {
 		
 		return hService.saveHospital(enitiy);
 	}
+	@PutMapping("/{id}/updateDetailes")
+	public Enitiy Update(@PathVariable Long id,@RequestBody Enitiy enitiy ) {
+		
+		return hService.updateHospitals(id,enitiy);
+	}
+	@DeleteMapping("/Delete/{id}")
+	public String Deletedeatiles(@PathVariable Long id)
+	{
+		hService.deteteDeatiles(id);
+	 	
+		return "data deleted successfully";
+	}
 	
-	@PutMapping
 	
 	
 

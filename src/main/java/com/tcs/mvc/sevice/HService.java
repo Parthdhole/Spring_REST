@@ -38,4 +38,21 @@ public class HService {
 //		return hRespoistory.addAll(enitiy); 
 //	}
 
+	public Enitiy updateHospitals(Long id, Enitiy enitiy) {
+		// TODO Auto-generated method stub
+		Enitiy  oldUser=hRespoistory.findById(id).get();
+		oldUser.setName(enitiy.getName());
+		oldUser.setRating(enitiy.getRating());
+		oldUser.setLocation(enitiy.getLocation());
+		return hRespoistory.save(oldUser);
+		
+	
+	}
+
+	public void deteteDeatiles(Long id) {
+		hRespoistory.deleteById(id);
+			
+		
+	}
+
 }
