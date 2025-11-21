@@ -1,4 +1,4 @@
-                                    REST api -> BY using this we can intearct  with data bases and i this we also have dome data base connection by  using rest and spring data jpa 
+                      REST( Representational State Transfer Application) api -> BY using this we can intearct  with data bases and i this we also have dome data base connection by  using rest and spring data jpa 
 
                                      GET -> 
                                      PSOT ->
@@ -8,6 +8,25 @@
                                      THE REST ASRE INTRACT WIH ANY APPLCAIATION AND RESPONCE AND REQUEST IS BOT IN THE FORM OF JSON 
 
                                      HERE IN SPRING BOOT WE CAN DO THIS IN PLODER STRUCTURE Controller--->Service--->repostorty--->Databses
+
+
+                                     http staus code:->
+                                     infoamtional responce(100-199)
+                                     Succesfull Resopnce(200-299)
+                                     Redirection Messages(300-399)
+                                     Client error responce(400-499)
+                                     Server error responce(500-599)
+
+
+                                     (CROSS ORIGIN RESOURCE SHARING) ->THE Machnism that allow serever to sprcify the which origin are permit to access thata resouces on the serever
+
+
+                                     @Controller vs @RestController( Representational State Transfer Application)
+                                     Controllers are used in MVC,                                       RestControllers are used in Spring REST,
+                           the Contorller methods default return value is view name                    the RestContorller methods default return value is JSON-Object.
+
+                                     
+                                     
 
                                     
                                                                 
