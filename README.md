@@ -47,6 +47,9 @@
 
 
 
+Rest Template:- it is way to communicate bewtween two application 
+
+
 
                                      
 
