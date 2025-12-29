@@ -50,6 +50,9 @@
 Rest Template:- it is way to communicate bewtween two application 
 
 
+we are add here two applciation diffrent beanch 
+irctc and mmt ->i connect or communate with RestTemplate 
+
 
                                      
 
